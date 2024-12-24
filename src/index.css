@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes globe {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.animate-globe {
+  animation: globe 20s linear infinite;
+}
